@@ -1,0 +1,10 @@
+{
+    "primaryMenu": [
+        {"name": "Home", "url": "index.php"},
+        {"name": "About Us", "url": "about.php"},
+        {"name": "Blog", "url": "blog/index.php"},
+        {"name": "Contact Us", "url": "contact.php"},
+        {"name": "Privacy Policy", "url": "privacy.php"}
+    ],
+    "footerContent": "<div class='space-y-4'><div>&copy; 2024 SMTP Testing Tool. All rights reserved.</div><div class='flex justify-center space-x-4'><a href='about.php' class='hover:text-blue-600 transition-colors'>About</a><a href='blog/index.php' class='hover:text-blue-600 transition-colors'>Blog</a><a href='contact.php' class='hover:text-blue-600 transition-colors'>Contact</a><a href='privacy.php' class='hover:text-blue-600 transition-colors'>Privacy</a></div></div>"
+}
