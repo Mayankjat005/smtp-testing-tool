@@ -1,0 +1,9 @@
+{
+    "primaryMenu": [
+        {"name": "Home", "url": "index.html"},
+        {"name": "About Us", "url": "about.html"},
+        {"name": "Contact Us", "url": "contact.html"},
+        {"name": "Privacy Policy", "url": "privacy.html"}
+    ],
+    "footerContent": "&copy; 2024 SMTP Testing Tool. All rights reserved."
+}
