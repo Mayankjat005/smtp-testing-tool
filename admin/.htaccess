@@ -1,0 +1,34 @@
+# Redirect index.php to login.php
+DirectoryIndex login.php
+
+# Protect sensitive files
+<FilesMatch "\.(json|log|php)$">
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+    # Allow access to specific PHP files
+    <Files "login.php">
+        Allow from all
+    </Files>
+    <Files "dashboard_new.php">
+        Allow from all
+    </Files>
+    <Files "api_new.php">
+        Allow from all
+    </Files>
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect against script injection
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Redirect old files to new ones
+Redirect 301 /admin/index.php /admin/login.php
+Redirect 301 /admin/dashboard.php /admin/dashboard_new.php
+Redirect 301 /admin/api.php /admin/api_new.php
